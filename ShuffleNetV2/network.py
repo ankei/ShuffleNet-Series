@@ -62,6 +62,9 @@ class ShuffleV2Block(nn.Module):
         x = x.reshape(2, -1, num_channels // 2, height, width)
         return x[0], x[1]
 
+
+#from the original networks.py
+
 class ShuffleNetV2(nn.Module):
     def __init__(self, input_size=224, n_class=1000, model_size='1.5x'):
         super(ShuffleNetV2, self).__init__()
