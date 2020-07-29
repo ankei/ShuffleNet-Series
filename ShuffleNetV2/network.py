@@ -66,7 +66,7 @@ class ShuffleV2Block(nn.Module):
 #from the original networks.py
 
 class ShuffleNetV2(nn.Module):
-    def __init__(self, input_size=224, n_class=1000, model_size='1.5x'):
+    def __init__(self, input_size=224, n_class=24, model_size='1.5x'):
         super(ShuffleNetV2, self).__init__()
         print('model size is ', model_size)
 
